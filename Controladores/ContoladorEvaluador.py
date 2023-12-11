@@ -20,7 +20,7 @@ class ControladorEvaluador():
         evaluadorActual = Evaluador(self.repositorioEvaluador.findById(id))
         evaluadorActual.name = infoEvaluador["name"]
         evaluadorActual.lastname = infoEvaluador["lastname"]
-        evaluadorActual.post = infoEvaluador["post"]
+        evaluadorActual.post = infoEvaluador["job"]
         return self.repositorioEvaluador.save(evaluadorActual)
 
     def delete(self, id):
