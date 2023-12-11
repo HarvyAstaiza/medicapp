@@ -23,7 +23,7 @@ class ControladorPaciente():
         pacienteActual.lastname = infoPaciente["lastname"]
         pacienteActual.weigth = infoPaciente["wheigth"]
         pacienteActual.size = infoPaciente["size"]
-        pacienteActual.headCircunference = infoPaciente["headCircunference"]
+        pacienteActual.headCircunference = infoPaciente["headcircunference"]
         return self.repositorioPaciente.save(pacienteActual)
 
     def delete(self, id):
