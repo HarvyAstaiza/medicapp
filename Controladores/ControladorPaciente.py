@@ -21,7 +21,7 @@ class ControladorPaciente():
         pacienteActual = Paciente(self.repositorioPaciente.findById(id))
         pacienteActual.name = infoPaciente["name"]
         pacienteActual.lastname = infoPaciente["lastname"]
-        pacienteActual.weigth = infoPaciente["wheigth"]
+        pacienteActual.weigth = infoPaciente["weigth"]
         pacienteActual.size = infoPaciente["size"]
         pacienteActual.headCircunference = infoPaciente["headcircunference"]
         return self.repositorioPaciente.save(pacienteActual)
