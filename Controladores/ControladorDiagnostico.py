@@ -39,8 +39,8 @@ class ControladorDiagnostico():
 
     def asignarPaciente(self, id, id_paciente):
         diagnosticoActual = Diagnostico(self.repositorioDiagnostico.findById(id))
-        pacienteActual = Paciente(self.repositorioPaciente.findById(id_paciente))
-        diagnosticoActual.paciente = pacienteActual
+        PacienteActual = Paciente(self.repositorioPaciente.findById(id_paciente))
+        diagnosticoActual.paciente = PacienteActual
         return self.repositorioDiagnostico.save(diagnosticoActual)
 
     """
